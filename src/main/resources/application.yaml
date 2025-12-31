@@ -1,2 +1,0 @@
-  spring.application.name: keycloak-adapter
-  keycloak.service.url: http://localhost:8181/realms/Card

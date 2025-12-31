@@ -5,7 +5,7 @@ import ir.bamap.blu.exception.AccessDeniedException
 import ir.bamap.blu.exception.BluException
 import org.springframework.http.HttpStatus
 
-class ByStatusErrorHandlerStrategy : ErrorHandlerStrategy {
+class ByStatusErrorDecoderStrategy : ErrorDecoderStrategy {
 
     override fun getExceptionOrNull(response: JsonResponseModel): BluException? {
         if (response.statusCode == HttpStatus.FORBIDDEN)

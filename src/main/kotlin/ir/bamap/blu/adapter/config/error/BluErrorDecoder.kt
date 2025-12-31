@@ -1,7 +1,7 @@
 package ir.bamap.blu.adapter.config.error
 
-import ir.bamap.blu.adapter.config.error.handler.ByStatusErrorHandlerStrategy
-import ir.bamap.blu.adapter.config.error.handler.ErrorHandlerStrategy
+import ir.bamap.blu.adapter.config.error.handler.ByStatusErrorDecoderStrategy
+import ir.bamap.blu.adapter.config.error.handler.ErrorDecoderStrategy
 import ir.bamap.blu.adapter.config.model.JsonResponseModel
 import ir.bamap.blu.adapter.config.model.ResponseModel
 import ir.bamap.blu.exception.BluException
@@ -16,7 +16,7 @@ open class BluErrorDecoder(
     protected val objectMapper: ObjectMapper
 ) {
     protected val logger: Logger = LoggerFactory.getLogger(javaClass)
-    protected val strategies: MutableList<ErrorHandlerStrategy> = mutableListOf()
+    protected val strategies: MutableList<ErrorDecoderStrategy> = mutableListOf()
 
     init {
         initStrategies()
@@ -63,6 +63,6 @@ open class BluErrorDecoder(
     }
 
     protected fun initStrategies() {
-        this.strategies.add(ByStatusErrorHandlerStrategy())
+        this.strategies.add(ByStatusErrorDecoderStrategy())
     }
 }
