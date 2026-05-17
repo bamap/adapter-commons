@@ -5,7 +5,7 @@
 
     <groupId>ir.bamap.blu.adapter</groupId>
     <artifactId>commons</artifactId>
-    <version>4.2.1</version>
+    <version>4.3.0</version>
 
     <name>commons</name>
     <description>Blu Commons for Blu Adapters</description>
