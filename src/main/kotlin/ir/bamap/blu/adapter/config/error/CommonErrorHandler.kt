@@ -1,7 +1,6 @@
 package ir.bamap.blu.adapter.config.error
 
 import ir.bamap.blu.adapter.config.model.ResponseModel
-import ir.bamap.blu.exception.ServiceUnavailableException
 import org.springframework.web.reactive.function.client.ClientRequest
 import org.springframework.web.reactive.function.client.ClientResponse
 import org.springframework.web.reactive.function.client.ExchangeFilterFunction
@@ -11,6 +10,7 @@ import org.springframework.web.reactive.function.client.bodyToMono
 import reactor.core.publisher.Mono
 import java.util.function.Function
 import java.util.function.Predicate
+import javax.naming.ServiceUnavailableException
 
 class CommonErrorHandler {
 

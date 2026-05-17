@@ -13,6 +13,7 @@ import tools.jackson.core.type.TypeReference
 import tools.jackson.databind.ObjectMapper
 
 open class BluErrorDecoder(
+    protected val serviceName: String,
     protected val objectMapper: ObjectMapper
 ) {
     protected val logger: Logger = LoggerFactory.getLogger(javaClass)
@@ -33,7 +34,7 @@ open class BluErrorDecoder(
                 ?.let { return it }
         }
 
-        return ExternalServiceException(response.statusCode.value(), jsonBody)
+        return ExternalServiceException(serviceName, response.statusCode.value(), jsonBody)
     }
 
     protected open fun logError(response: JsonResponseModel) {

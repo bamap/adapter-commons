@@ -5,7 +5,7 @@
 
     <groupId>ir.bamap.blu.adapter</groupId>
     <artifactId>commons</artifactId>
-    <version>4.1.0</version>
+    <version>4.2.0</version>
 
     <name>commons</name>
     <description>Blu Commons for Blu Adapters</description>
@@ -46,7 +46,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-        <exception.version>1.0.4</exception.version>
+        <exception.version>1.0.5</exception.version>
 
         <!--   Test versions   -->
         <spring-boot.version>4.0.2</spring-boot.version>
