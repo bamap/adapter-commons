@@ -5,7 +5,7 @@
 
     <groupId>ir.bamap.blu.adapter</groupId>
     <artifactId>commons</artifactId>
-    <version>4.3.0</version>
+    <version>4.3.1</version>
 
     <name>commons</name>
     <description>Blu Commons for Blu Adapters</description>
@@ -49,39 +49,29 @@
         <exception.version>1.0.6</exception.version>
 
         <!--   Test versions   -->
-        <spring-boot.version>4.0.2</spring-boot.version>
+        <spring-boot.version>4.1.0</spring-boot.version>
     </properties>
     <dependencies>
         <dependency>
             <groupId>ir.bamap.blu</groupId>
             <artifactId>exception</artifactId>
-            <scope>provided</scope>
-            <optional>true</optional>
             <version>${exception.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-web</artifactId>
-            <scope>provided</scope>
-            <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webflux</artifactId>
-            <scope>provided</scope>
-            <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
-            <scope>provided</scope>
-            <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>tools.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <scope>provided</scope>
-            <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>org.jetbrains.kotlin</groupId>
