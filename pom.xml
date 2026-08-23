@@ -5,7 +5,7 @@
 
     <groupId>ir.bamap.blu.adapter</groupId>
     <artifactId>commons</artifactId>
-    <version>4.3.1</version>
+    <version>4.3.2</version>
 
     <name>commons</name>
     <description>Blu Commons for Blu Adapters</description>
@@ -49,7 +49,7 @@
         <exception.version>1.0.6</exception.version>
 
         <!--   Test versions   -->
-        <spring-boot.version>4.1.0</spring-boot.version>
+        <spring-boot.version>4.1.1</spring-boot.version>
     </properties>
     <dependencies>
         <dependency>
